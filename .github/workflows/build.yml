@@ -1379,7 +1379,7 @@ jobs:
                                                   CONFIG_SOUND=y
           CONFIG_SND=y
           CONFIG_SND_DRIVERS=y
-          CONFIG_SND_ALOOP=m
+          CONFIG_SND_ALOOP=y
           EOF
 
           # 禁用KSU 时源码里没有 KernelSU，CONFIG_KSU 不存在，写入会被 bazel 的 defconfig 检查拒绝
