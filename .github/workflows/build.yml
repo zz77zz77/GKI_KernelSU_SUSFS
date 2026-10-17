@@ -1190,8 +1190,7 @@ jobs:
             cat >> "$CONFIG_FILE" <<'EOF'
           CONFIG_ZSMALLOC=y
           CONFIG_ZRAM=y
-          CONFIG_MODULE_SIG=n
-          CONFIG_CRYPTO_LZO=y
+                    CONFIG_CRYPTO_LZO=y
           CONFIG_ZRAM_DEF_COMP_LZ4KD=y
           EOF
           fi
@@ -1377,11 +1376,7 @@ jobs:
           cat >> "$DEFCONFIG" << 'EOF'
           CONFIG_TMPFS_XATTR=y
           CONFIG_TMPFS_POSIX_ACL=y
-          CONFIG_CFI_CLANG=n
-          CONFIG_MODULE_SIG=n
-          CONFIG_MODULE_SIG_ALL=n
-          CONFIG_MODULE_SIG_FORCE=n
-          CONFIG_SOUND=y
+                                                  CONFIG_SOUND=y
           CONFIG_SND=y
           CONFIG_SND_DRIVERS=y
           CONFIG_SND_ALOOP=m
