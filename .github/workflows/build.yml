@@ -1377,6 +1377,14 @@ jobs:
           cat >> "$DEFCONFIG" << 'EOF'
           CONFIG_TMPFS_XATTR=y
           CONFIG_TMPFS_POSIX_ACL=y
+          CONFIG_CFI_CLANG=n
+          CONFIG_MODULE_SIG=n
+          CONFIG_MODULE_SIG_ALL=n
+          CONFIG_MODULE_SIG_FORCE=n
+          CONFIG_SOUND=y
+          CONFIG_SND=y
+          CONFIG_SND_DRIVERS=y
+          CONFIG_SND_ALOOP=m
           EOF
 
           # 禁用KSU 时源码里没有 KernelSU，CONFIG_KSU 不存在，写入会被 bazel 的 defconfig 检查拒绝
