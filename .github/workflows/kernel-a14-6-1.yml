@@ -28,7 +28,7 @@ on:
           - 关闭
           - 禁用SUSFS
           - 禁用KSU
-        default: 关闭
+        default: 禁用KSU
       use_kpm:
         description: "KPM 功能（patched 尚不支持）"
         required: true
